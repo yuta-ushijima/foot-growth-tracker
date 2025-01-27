@@ -1,0 +1,11 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "types/index.ts",
+  "types": "types/index.ts",
+  "author": "Yuta Ushijima",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}
