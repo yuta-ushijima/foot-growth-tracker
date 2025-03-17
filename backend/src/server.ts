@@ -16,7 +16,7 @@ class FootGrowthServer {
 
         this.io = new Server(this.httpServer, {
             cors: {
-                origin: ["http://localhost:3000", "http://127.0.0.1:3000"],
+                origin: ["http://localhost:30000", "http://127.0.0.1:30000"],
                 methods: ["GET", "POST"],
                 credentials: true
             }

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+/* カスタム変数の定義 */
+:root {
+    --color-primary: #FF97B7;     /* メインピンク */
+    --color-secondary: #7CC2FF;   /* メインブルー */
+    --color-accent-1: #FFD93D;    /* アクセント黄色 */
+    --color-accent-2: #FF9F59;    /* アクセントオレンジ */
+    --color-background: #FFF5F7;  /* 優しい背景色 */
+    --color-text: #4A5568;        /* テキストカラー */
+}
+
+/* 基本スタイル */
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* カスタムユーティリティクラス */
+.shadow-warm {
+    box-shadow: 0 4px 14px rgba(255, 151, 183, 0.1);
+}
+
+.shadow-soft {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-bubble {
+    border-radius: 24px;
+}
+
+.gradient-warm {
+    background: linear-gradient(135deg, #FFE5EC 0%, #FFF 100%);
+}
+
+/* アニメーション */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
